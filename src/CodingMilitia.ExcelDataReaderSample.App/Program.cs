@@ -9,7 +9,7 @@ namespace CodingMilitia.ExcelDataReaderSample.App
     {
         static void Main(string[] args)
         {
-            // required because of known bug when running on .NET Core
+            // required because of known issue when running on .NET Core
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
             using (var stream = File.Open("Files/sample.xlsx", FileMode.Open, FileAccess.Read))

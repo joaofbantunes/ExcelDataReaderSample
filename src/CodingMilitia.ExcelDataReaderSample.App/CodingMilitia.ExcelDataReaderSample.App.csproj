@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDataReader" Version="3.4.1" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.4.1" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+  </ItemGroup>
+
+<ItemGroup>
+  <Content Include="Files\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>  
+</ItemGroup>
+
+</Project>
